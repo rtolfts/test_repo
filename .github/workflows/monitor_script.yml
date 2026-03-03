@@ -29,4 +29,4 @@ jobs:
           STALE_DAYS: '7'
           IDLE_DAYS: '3'
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        run: node /monitor script/team-monitor.js
+        run: node "/monitor script/team-monitor.js"
