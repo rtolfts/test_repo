@@ -1,0 +1,17 @@
+{
+  "name": "team-activity-monitor",
+  "version": "1.0.0",
+  "description": "GitHub team activity monitoring agent",
+  "main": "team-monitor.js",
+  "scripts": {
+    "start": "node team-monitor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["github", "monitoring", "team", "agent"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/graphql": "^5.0.0",
+    "@octokit/rest": "^19.0.0"
+  }
+}
