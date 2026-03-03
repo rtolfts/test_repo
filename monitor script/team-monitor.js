@@ -9,8 +9,8 @@ const { Octokit } = require('@octokit/rest');
 // Configuration
 const config = {
   githubToken: process.env.GITHUB_TOKEN,
-  organization: process.env.ORG_NAME, // e.g., 'my-company'
-  teamMembers: process.env.TEAM_MEMBERS?.split(',') || [], // GitHub usernames
+  organization: "ITV", // e.g., 'my-company'
+  teamMembers: process.env.TEAM_MEMBERS?.split(',') || ["Macro80-20","mikokofuyu"], // GitHub usernames
   staleDays: parseInt(process.env.STALE_DAYS) || 7,
   idleDays: parseInt(process.env.IDLE_DAYS) || 3,
   slackWebhook: process.env.SLACK_WEBHOOK, // Optional: for Slack notifications
