@@ -8,7 +8,7 @@ const { Octokit } = require('@octokit/rest');
 
 // Configuration
 const config = {
-  githubToken: process.env.GITHUB_TOKEN,
+  githubToken: process.env.MONITORING_TOKEN,
   organization: "ITV", // e.g., 'my-company'
   teamMembers: process.env.TEAM_MEMBERS?.split(',') || ["Macro80-20","mikokofuyu"], // GitHub usernames
   staleDays: parseInt(process.env.STALE_DAYS) || 7,
